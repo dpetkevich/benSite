@@ -5,6 +5,17 @@
   position: absolute;
 }
 
+.mainBlock:before{
+  
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position:absolute;
+    background-color: rgba(0,60,80,.3);
+
+}
 
 /* header block */
 .app-graph {
@@ -17,6 +28,11 @@
   .app-graph {
     width: 100%;
     bottom: 0;
+  }
+
+  .mainBlock{
+    background-image: url("placeit-HI.jpg");
+    background-color:none;
   }
 }
 
@@ -93,6 +109,10 @@
 @media (max-width: 768px) {
   .app-marketing-grid .m-b-lg {
     margin-bottom: 40px !important;
+  }
+
+  .mainBlock{
+    background-color:rgba(0,60,80,1)
   }
 }
 

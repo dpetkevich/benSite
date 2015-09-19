@@ -21,6 +21,22 @@
   	<%= csrf_meta_tags %>
   </head>
 <body>
+  <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["What's the best credit card for me?",
+                  "How do I open a retirement account?",
+                  "Can I get cheaper car insurance?",
+                  "Can I refinance my student loans?"
+                  ],               
+        typeSpeed: 0,
+        loop:true,
+        showCursor:false,
+        backSpeed:1,
+        backDelay:3000
+      });
+  });
+</script>
   
   <%= yield%>
 

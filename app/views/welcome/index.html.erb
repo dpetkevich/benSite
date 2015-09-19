@@ -1,6 +1,6 @@
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked">
-    <li class="nav-header">Examples</li>
+    <li class="nav-header">Benjamin</li>
     <li class="active">
       <a href="index.html">Home</a>
     </li>
@@ -10,8 +10,9 @@
     <li>
       <a href="#team">Team</a>
     </li>
-    <li href="#contact">Contact</li>
-    <li href="blog.html">Blog</li>
+    <li>
+      <a href="blog.html">Blog</a>
+    </li>
   </ul>
 </div>
 
@@ -27,7 +28,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href=<%= root_path  %>>
         <strong style="background: #fff; padding: 12px; border-radius: 4px; color: #28669F;">
           Benjamin
         </strong>
@@ -42,9 +43,6 @@
           <a class="page-scroll" href="#team">Team</a>
         </li>
         <li >
-          <a class="page-scroll" href="#contact">Contact</a>
-        </li>
-        <li >
           <a class="page-scroll" href="blog.html">Blog</a>
         </li>
       </ul>
@@ -53,64 +51,106 @@
 </nav>
 
 
+
 <!-- <div class="block block-inverse block-fill-height app-header"
      style="background-image: url(docs/assets/img/placeit-tall.jpg);"> -->
 
-<div class="block block-inverse block-fill-height app-header"
-     style="background-image: url(<%= asset_path 'placeit-tall.jpg' %>);">
+<div class="block block-inverse block-fill-height app-header mainBlock"
+     >
 
 <!--   <img class="app-graph" src="docs/assets/img/startup-0.svg">
- -->  <%= image_tag("startup-0", class:'app-graph') %>
+  url(<%= asset_path 'placeit-HI.jpg' %>
+ --> 
 
   <div class="block-xs-middle p-b-lg">
     <div class="container">
       <div class="row">
-        <div class="col-sm-10 col-md-6">
-          <h1 class="block-title m-b-sm">Answers for your finances.
-            <typer words="['credit card.', 'student loans.', 'old 401(k).', 'car insurance.', 'savings.', 'refinancing.','the meaning of life.','if capitalism is fair.','lowering a cable bill.','saving to retire.','budgeting.','where my money goes.','how to invest.','credit cards.','health insurance.','stuff insurance.','who you are exactly?']" start-typing="false" repeat="true" type-time="75" highlight-background="#7df9ff" highlight-time="250">
+        <div class="col-md-8">
+          <h1 class="block-title hidden-xs" style='height:84px' >
+            <div class='element '></div>
           </h1>
-          <p class="lead m-b-md text-muted">Have an AI assistant do all the work.</p>
+          <h1 class="block-title visible-xs-block" style='height:126px' >
+            <div class='element '></div>
+          </h1>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <p class="lead text-muted">Ask us and we'll text you the answer.</p>
             <div class="hidden-xs">
-                  <input type="tel" name="phone_number" id="phone_number" placeholder="Your Phone Number" class="input-lg" style="text-align:center">
+                  <form class='form'>
+                  <input type="tel" name="phone_number" id="phone_number" placeholder="your phone number" class="input-lg" style="text-align:center;color:black">
                   <br><br>
-                  <input type="submit" name="commit" id="submitphone" value="Start with a text" class="btn btn-primary btn-lg">
+                  <input type="submit" name="commit" id="submitphone" value="Get Started" class="btn btn-primary btn-lg">
                   </form>
             </div>
             <div class="visible-xs-block">
-              <a href="sms:6692365527" class="btn btn-primary btn-lg">Start with a text</a>
-              <h6>Automatically opens iMessage. <br>Send Ben a text that says "Hi."</h6>
+              <a href="sms:6692365527" class="btn btn-primary btn-lg">Text Benjamin</a> 
             </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="block block-secondary app-iphone-block" id="about">
+<div class="block block-secondary app-iphone-block hidden-xs" id="about">
   <div class="container">
     <div class="row app-align-center">
 
-      <div class="col-sm-5 hidden-xs">
+      <div class="col-sm-5 text-xs-right">
 <!--         <img class="app-iphone" src="docs/assets/img/startup-2copy.jpg" style="width: 100%;">
  -->        <%= image_tag("startup-2copy", class:'app-iphone', style:'width: 100%') %>
       </div>
 
       <div class="col-sm-6 col-sm-offset-1">
         <h6 class="text-muted text-uppercase">About</h6>
-        <h3 class="m-t-0">Hi. It's Benjamin. <br>I'm an AI that know everything about personal finance.</h3>
-        <p class="lead m-b-md">A sophisticated AI interface with a huge database of financial information and consumer decisions, all designed to find the best possible answers for you.</p>
+        <h3 class="m-t-0">I'm Benjamin, a robot that will give you personalized financial advice.</h3>
+        <p class="lead m-b-md">Benjamin has with a huge database of financial information, all designed to find the best possible answers for you.</p>
         <div class="row hidden-sm">
           <div class="col-sm-6 m-b-md">
             <h5 class="m-y-0">How it works</h5>
-            <p>You send Benjamin a text. The AI starts a conversation. You can get a general financial check-up or ask a specific question. <a href="#" class="text-primary">See it in action.</a></p>
+            <p>Just type in your phone number above and Benjamin will text you. Ask him specific questions or get a general financial checkup.</p>
           </div>
           <div class="col-sm-6">
             <h5 class="m-y-0">What will I get?</h5>
-            <p>Benjamin can almost always find savings in some part of your financial life. On average, users save about $250. <a href="#" class="text-primary">Examples</a>.</p>
+            <p>Benjamin can almost always find savings in some part of your financial life. On average, users save about $250.</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="block block-secondary app-iphone-block visible-xs-block" id="about">
+  <div class="container">
+    <div class="row app-align-center">
+
+     
+
+      <div class="col-sm-6 col-sm-offset-1">
+        <h6 class="text-muted text-uppercase">About</h6>
+        <h3 class="m-t-0">I'm Benjamin, a robot that will give you personalized financial advice.</h3>
+        <p class="lead m-b-md">Benjamin has with a huge database of financial information, all designed to find the best possible answers for you.</p>
+        <div class="row hidden-sm">
+          <div class="col-sm-6 m-b-md">
+            <h5 class="m-y-0">How it works</h5>
+            <p>Just tap the button above to text Benjamin. Ask him specific questions or get a general financial checkup.</p>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="m-y-0">What will I get?</h5>
+            <p>Benjamin can almost always find savings in some part of your financial life. On average, users save about $250.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-sm-5 text-xs-right">
+<!--         <img class="app-iphone" src="docs/assets/img/startup-2copy.jpg" style="width: 100%;">
+ -->        <%= image_tag("startup-2copy", class:'app-iphone', style:'width: 100%') %>
+      </div>
+
   </div>
 </div>
 
@@ -120,15 +160,15 @@
     <div class="row app-align-center">
       <div class="col-sm-5 col-sm-push-7">
         <h6 class="text-muted text-uppercase">Team</h6>
-        <h3 class="m-t-0 m-b-md">Thomas Smyth &<br>Daniel Petkevich</h3>
-        <p class="m-b-md">Thomas and Dan went to Yale together. You'd think they'd really have a handle on their finances, wouldn't you? After high interest payments, expensive car insurance, and bank overdraft fees, they realized that the world of consumer finance is surprisingly complicated. That's why they created Benjamin: to make it super-easy to take care of your financial life.</p>
+        <h3 class="m-t-0 m-b-md">Thomas Smyth &<br>Dan Petkevich</h3>
+        <p class="m-b-md">Thomas and Dan went to Yale together. You'd think they'd have a handle on their personal finances, but after high interest payments, expensive car insurance, and bank overdraft fees, they realized that the world of consumer finance is surprisingly complicated. That's why they created Benjamin: to make it super-easy to take care of your financial life.</p>
       </div>
-      <div class="col-sm-4 col-sm-pull-5">
+      <div class="col-md-4 col-sm-pull-5">
 <!--         <img src="docs/assets/img/thomas.jpg">
  -->         <%= image_tag("thomas") %>
 
       </div>
-      <div class="col-sm-4 col-sm-pull-5">
+      <div class="col-md-4 col-sm-pull-5">
 <!--         <img src="docs/assets/img/daniel.jpg">
  -->        <%= image_tag("daniel") %>
       </div>
@@ -136,25 +176,11 @@
   </div>
 </div>
 
-<!-- <div class="block app-ribbon p-y-lg">
-  <div class="container text-center">
-    <img src="assets/img/startup-4.svg">
-    <img src="assets/img/startup-5.svg">
-    <img src="assets/img/startup-6.svg">
-    <img src="assets/img/startup-7.svg">
-    <img src="assets/img/startup-8.svg">
-  </div>
-</div> -->
+
 
 <div class="block block-secondary app-block-marketing-grid">
   <div class="container text-center">
 
-    <div class="row m-b-lg">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-        <h6 class="text-muted text-uppercase">Inside the machine</h6>
-        <h3  class="m-t-0 m-b">It’s not hard to see how we make your life easier every day.</h3>
-      </div>
-    </div>
 
     <div class="row app-marketing-grid">
       <div class="col-sm-4 p-x-md m-b-lg">
@@ -194,74 +220,6 @@
   </div>
 </div>
 
-<!-- <div class="block app-price-plans">
-  <div class="container text-center">
-
-    <div class="row m-b-lg">
-      <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-        <h6 class="text-muted text-uppercase">Business Talk</h6>
-        <h3  class="m-t-0">No plans. We just bump your plan whenever you need it.</h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4 p-x m-b-lg">
-        <div class="p-x">
-          <h6 class="text-muted text-uppercase m-b">Personal</h6>
-          <img class="m-b" src="assets/img/startup-15.svg">
-          <p>Plenty of processing power for any personal projects, big or small.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-left m-y-md">
-          <li class="p-y"><strong>10k</strong> monthly requests</li>
-          <li class="p-y"><strong>9am-5pm</strong> technical supprt</li>
-          <li class="p-y"><strong>Public</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="visible-lg-inline">a personal account</span>
-        </button>
-      </div>
-
-      <div class="col-sm-4 p-x m-b-lg">
-        <div class="p-x">
-          <h6 class="text-muted text-uppercase m-b">Business</h6>
-          <img class="m-b" src="assets/img/startup-16.svg">
-          <p>The perfect sized plan for small businesses to get started.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-left m-y-md">
-          <li class="p-y"><strong>100k</strong> monthly requests</li>
-          <li class="p-y"><strong>24/7</strong> technical supprt</li>
-          <li class="p-y"><strong>Public</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="visible-lg-inline">a business account</span>
-        </button>
-      </div>
-
-      <div class="col-sm-4 p-x m-b-lg">
-        <div class="p-x">
-          <h6 class="text-muted text-uppercase m-b">Corporate</h6>
-          <img class="m-b" src="assets/img/startup-17.svg">
-          <p>An unlimited plan that will scale infinitely to any size project.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-left m-y-md">
-          <li class="p-y"><strong>Unlimited</strong> monthly requests</li>
-          <li class="p-y"><strong>24/7</strong> technical supprt</li>
-          <li class="p-y"><strong>Public & Private</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="visible-lg-inline">a corporate account</span>
-        </button>
-      </div>
-    </div>
-
-  </div>
-</div> -->
 
 <div class="block block-inverse app-footer" id="contact">
  <div class="container">
@@ -274,24 +232,7 @@
           </li>
         </ul>
       </div>
-<!--       <div class="col-sm-2 col-sm-offset-1 m-b-md">
-        <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">Product</h6></li>
-          <li class="text-muted">Features</li>
-          <li class="text-muted">Examples</li>
-          <li class="text-muted">Tour</li>
-          <li class="text-muted">Gallery</li>
-        </ul>
-      </div>
-      <div class="col-sm-2 m-b-md">
-        <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">Apis</h6></li>
-          <li class="text-muted">Rich data</li>
-          <li class="text-muted">Simple data</li>
-          <li class="text-muted">Real time</li>
-          <li class="text-muted">Social</li>
-        </ul>
-      </div> -->
+
       <div class="col-sm-2 m-b-md">
         <ul class="list-unstyled list-spaced">
           <li class="m-b"><h6 class="text-uppercase">Legal</h6></li>
