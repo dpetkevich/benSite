@@ -24,9 +24,9 @@ test:
   password: harvey
   username: postgres
 
-production:
-  <<: *default
-  database: ben_prod_db
-  port: 5433
-  password: harvey
-  username: postgres
+# production:
+#   <<: *default
+#   database: ben_prod_db
+#   port: 5433
+#   password: harvey
+#   username: postgres
