@@ -4,16 +4,17 @@ $( document ).ready(function() {
     $('a').click(function(){
 
     	mixpanel.track("Click",{
-    		Button:$(this).html();
+    		"Button": $(this).html()
     	})
 
-    })
+    });
 
     $('#submitphone').click(function(){
 
     	mixpanel.track("Click",{
-    		Button:"Get Started";
+    		"Button":"Get Started",
+    		"Content": $('#phone_number').val()
     	})
 
-    })
+    });
 });
