@@ -12,7 +12,7 @@ $( document ).ready(function() {
     $('#submitphone').click(function(){
 
     	mixpanel.track("Click",{
-    		Button:"Get Started"
+    		Button:"Get Started";
     	})
 
     })
