@@ -31,7 +31,7 @@ class RequestsController < ApplicationController
 
     respond_to do |format|
       if @request.save
-        format.html { redirect_to root_path, notice: "Thanks for reaching out! We've been getting so much interest, we had to start a waitlist. We'll text you as soon as your name hits the top!" }
+        format.html { redirect_to root_path, notice: "Thanks for reaching out! We're getting so much interest, we had to start a waitlist. We'll text you as soon as your name hits the top!" }
         format.json { render :show, status: :created, location: @request }
       else
         print(@request.errors)
