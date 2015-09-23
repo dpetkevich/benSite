@@ -76,15 +76,34 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
+
           <p class="lead text-muted">Ask us and we'll text you the answer.</p>
+          
+          <% if alert.nil? == false %>
+            <h4 style='color:#96281B'><%= alert %></h4>
+          <% end %>
+
+
+
+          <% if notice.nil? == false %>
+            
             <div class="hidden-xs">
-                  <form class='form' id='mainForm'>
-                  <input type="tel" name="phone_number" id="phone_number" placeholder="your phone number" class="input-lg" style="text-align:center;color:black">
+                  <h3 style='color:#2d3238'><%= notice %></h3>
+            </div>
+
+          <% else %>
+            <div class="hidden-xs">
+                  <%= form_tag({controller: "requests", action: "create"}, method:'post') do %>
+                  <input name="request[phoneNumber]" id="phone_number" placeholder="your phone number" class="input-lg" style="text-align:center;color:black">
                   <br><br>
                   <input type="submit" name="commit" id="submitphone" value="Get Started" class="btn btn-primary btn-lg">
-                  </form>
+                  <% end %>
             </div>
+          <% end %>
+
+
+
             <div class="visible-xs-block">
               <a href="sms:6692365527" class="btn btn-primary btn-lg">Text Benjamin</a> 
             </div>
