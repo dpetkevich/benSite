@@ -12,10 +12,10 @@ default: &default
 
 development:
   <<: *default
-  database: ben_dev_db
-  port: 5433
-  password: harvey
-  username: postgres
+  database: smyth
+  port: 5432
+  password: 
+  username: smyth
 
 test:
   <<: *default

@@ -31,7 +31,7 @@
   }
 
   .mainBlock{
-    background-image: url("placeit-HI.jpg");
+    background-image: url("frankie2-desktop.jpg");
     background-color:none;
   }
 }
@@ -112,7 +112,8 @@
   }
 
   .mainBlock{
-    background-color:rgba(0,60,80,1)
+    background-color:rgba(0,60,80,1);
+    background-image: url("frankie2.jpg");
   }
 }
 
