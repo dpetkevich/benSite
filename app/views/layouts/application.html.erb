@@ -45,9 +45,20 @@
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6028430942790&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
 
 
-    <script type="text/javascript">(function(d, w, k, t, a) {
-  !w[k] && (w[k] = { projectId: '5604a63ae4b0e3351b115727'}) && (a = d.createElement(t)) && (a.src = 'https://mobile.usabilitytools.com/recorder/tracker/tracker.js') && (d.head.appendChild(a));
-})(document, window, 'TOY STORY VISITOR RECORDING', 'script');</script>
+   <script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'www.fullstory.com';
+window['_fs_org'] = 'H3CT';
+(function(m,n,e,t,l,o,g,y){
+  g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+  o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+  g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
+  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;FS(o,v)};
+  g.clearUserCookie=function(d,i){d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+  ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}
+})(window,document,'FS','script','user');
+</script>
 
 
 
