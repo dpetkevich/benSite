@@ -1,7 +1,7 @@
 class CreateRequests < ActiveRecord::Migration
   def change
     create_table :requests do |t|
-      t.decimal :phoneNumber, precision: 12, scale: 0
+      t.string :phoneNumber
 
       t.timestamps null: false
     end

@@ -4,6 +4,13 @@ Rails.application.routes.draw do
   resources :requests
 
   root 'welcome#index'
+
+  get '/2', to: 'welcome#index2'
+  get '/3', to: 'welcome#index3'
+  get '/4', to: 'welcome#index4'
+  get '/5', to: 'welcome#index5'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

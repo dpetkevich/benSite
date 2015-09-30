@@ -31,7 +31,7 @@
   }
 
   .mainBlock{
-    background-image: url("frankie2-desktop.jpg");
+    background-image: url("placeit-HI.jpg");
     background-color:none;
   }
 }
@@ -112,8 +112,8 @@
   }
 
   .mainBlock{
-    background-color:rgba(0,60,80,1);
-    background-image: url("frankie2.jpg");
+    background-color:rgba(0,60,80,.7);
+/*    background-image: url("frankie2.jpg");*/
   }
 }
 
@@ -160,6 +160,7 @@
 .btn-lg {
   font-size: 18px;
 }
+
 .block-secondary .btn-lg {
   width: 100%;
 }

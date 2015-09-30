@@ -1,5 +1,8 @@
 $( document ).ready(function() {
-    mixpanel.track("Page Loaded");
+
+    mixpanel.track("Page Loaded", {
+        "landing_page": $('.parent').attr('id')
+    });
 
     $('a').click(function(){
 

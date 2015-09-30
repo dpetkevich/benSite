@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20150922210657) do
   enable_extension "plpgsql"
 
   create_table "requests", force: :cascade do |t|
-    t.decimal  "phoneNumber", precision: 12
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.string   "phoneNumber"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

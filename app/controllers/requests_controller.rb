@@ -25,17 +25,17 @@ class RequestsController < ApplicationController
   # POST /requests.json
   def create
     @rawNumber = (params[:request][:phoneNumber])
-    @cleanNumber = @rawNumber.gsub("-",'').gsub('(','').gsub(')','').gsub(' ','')
+    # @cleanNumber = @rawNumber.gsub("-",'').gsub('(','').gsub(')','').gsub(' ','')
     print(@cleanNumber)
-    @request = Request.new(phoneNumber: @cleanNumber)
+    @request = Request.new(phoneNumber: @rawNumber)
 
     respond_to do |format|
       if @request.save
-        format.html { redirect_to root_path, notice: "Thanks for reaching out! We're getting so much interest, we had to start a waitlist. We'll text you as soon as your name hits the top!" }
+        format.html { redirect_to root_path, notice: "Thanks for reaching out! We're getting so much interest, we had to start a waitlist. We'll email you as soon as your name hits the top!" }
         format.json { render :show, status: :created, location: @request }
       else
         print(@request.errors)
-        format.html { redirect_to root_path, alert: 'Please enter a valid phone number.' }
+        format.html { redirect_to root_path, alert: 'Please enter a valid email.' }
         format.json { render json: @request.errors, status: :unprocessable_entity }
       end
     end

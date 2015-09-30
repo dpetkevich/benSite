@@ -1,9 +1,9 @@
-<div id='index0' class='parent'>
+<div id='index5' class='parent'>
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked">
     <li class="nav-header">Benjamin</li>
     <li class="active">
-      <a href="index.html">Home</a>
+      <a href="index2.html">Home</a>
     </li>
     <li>
       <a href="#about">About</a>
@@ -12,7 +12,7 @@
       <a href="#team">Team</a>
     </li>
     <li>
-      <a href="blog.html">Blog</a>
+      <a href="http://blog.textbenjamin.com">Blog</a>
     </li>
   </ul>
 </div>
@@ -29,11 +29,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=<%= root_path  %>>
+      <a class="navbar-brand" href="sms:6692365527&body=Hi, Benjamin"
         <strong style="background: #fff; padding: 12px; border-radius: 4px; color: #28669F;">
           Benjamin
         </strong>
       </a>
+  <!-- href=<%= root_path  %>> -->
     </div>
     <div class="navbar-collapse collapse text-uppercase">
       <ul class="nav navbar-nav navbar-right">
@@ -44,7 +45,7 @@
           <a class="page-scroll" href="#team">Team</a>
         </li>
         <li >
-          <a class="page-scroll" href="blog.html">Blog</a>
+          <a class="page-scroll" href="http://blog.textbenjamin.com">Blog</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -63,19 +64,31 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h1 class="block-title hidden-xs" style='height:84px' >
-            <div class='element '></div>
-          </h1>
+
           <h1 class="block-title visible-xs-block" style='height:126px' >
-            <div class='element'></div>
+            Compare Your Financial Life To Everyone Else's<br><br>
+<!--             <div class='element'></div> -->
           </h1>
+
+          <h1 class="block-title hidden-xs" style='height:84px' >
+            Compare Your Financial Life <br>To Everyone Else's
+<!--             <div class='element '></div> -->
+          </h1>
+
           
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
 
-          <p class="lead text-muted">Text Ben <br>and he'll fetch the answer.</p>
+          <div class="block-title visible-xs-block">
+            <br>
+            <p class="lead text-muted">Text An AI To See How Your Finances Stack Up</p>
+          </div>
+
+          <div class="hidden-xs">
+          <p class="lead text-muted">Analyze Your Transaction History To See Your Financial Life Versus The Average</p>
+          </div>
           
           <% if alert.nil? == false %>
             <h4 style='color:#96281B'><%= alert %></h4>
@@ -86,15 +99,17 @@
           <% if notice.nil? == false %>
             
             <div class="hidden-xs">
-                  <h3 style='color:#2d3238'><%= notice %></h3>
+                  <h3 style='color:#f50000'><%= notice %></h3>
             </div>
+
+<!--             fomerly #2d3238 -->
 
           <% else %>
             <div class="hidden-xs">
                   <%= form_tag({controller: "requests", action: "create"}, method:'post') do %>
-                  <input name="request[phoneNumber]" id="phone_number" placeholder="your phone number" class="input-lg" style="text-align:center;color:black">
+                  <input name="request[phoneNumber]" id="phone_number" placeholder="Your Email" class="input-lg" style="text-align:center;color:black">
                   <br><br>
-                  <input type="submit" name="commit" id="submitphone" value="Get Started" class="btn btn-primary btn-lg">
+                  <input type="submit" name="commit" id="submitphone" value="See Your Financial Health Score In 30 Seconds" class="btn btn-danger btn-lg">
                   <% end %>
             </div>
           <% end %>
@@ -102,7 +117,14 @@
 
 
             <div class="visible-xs-block">
-              <a href="sms:6692365527" class="btn btn-primary btn-lg">Send Ben a text</a>
+              <a href="sms:6692365527&body=Hi, Benjamin" class="btn btn-danger btn-lg">Start With A Text</a>
+              <br><br><br><br>
+              <strong>Most Popular Questions</strong>
+              <ul>
+              <li>How much do people like me usually earn?</li>
+              <li>Am I getting below-average points on my credit card?</li>
+              <li>What's the average savings rate of my peers?</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -123,11 +145,11 @@
       <div class="col-sm-6 col-sm-offset-1">
         <h6 class="text-muted text-uppercase">About</h6>
         <h3 class="m-t-0">I'm Benjamin, a robot that will give you personalized financial advice.</h3>
-        <p class="lead m-b-md">Benjamin has a huge database of financial information, all designed to find the best possible answers for you.</p>
+        <p class="lead m-b-md">I've compiled a comprehensive database of financial information, all designed to find the best possible answers for you.</p>
         <div class="row hidden-sm">
           <div class="col-sm-6 m-b-md">
             <h5 class="m-y-0">How it works</h5>
-            <p>Just type in your phone number above and Benjamin will text you. Ask him specific questions or get a general financial checkup.</p>
+            <p>Sign up with your email above. Ask Benjamin specific questions or get a general financial checkup.</p>
           </div>
           <div class="col-sm-6">
             <h5 class="m-y-0">What will I get?</h5>
@@ -148,7 +170,7 @@
       <div class="col-sm-6 col-sm-offset-1">
         <h6 class="text-muted text-uppercase">About</h6>
         <h3 class="m-t-0">I'm Benjamin, a robot that will give you personalized financial advice.</h3>
-        <p class="lead m-b-md">Benjamin has with a huge database of financial information, all designed to find the best possible answers for you.</p>
+        <p class="lead m-b-md">I've compiled a comprehensive database of financial information, all designed to find the best possible answers for you.</p>
         <div class="row hidden-sm">
           <div class="col-sm-6 m-b-md">
             <h5 class="m-y-0">How it works</h5>
@@ -176,8 +198,8 @@
     <div class="row app-align-center">
       <div class="col-sm-5 col-sm-push-7">
         <h6 class="text-muted text-uppercase">Team</h6>
-        <h3 class="m-t-0 m-b-md">Thomas Smyth &<br>Dan Petkevich</h3>
-        <p class="m-b-md">Thomas and Dan went to Yale together. You'd think they'd have a handle on their personal finances, but after high interest payments, expensive car insurance, and bank overdraft fees, they realized that the world of consumer finance is surprisingly complicated. That's why they created Benjamin: to make it super-easy to take care of your financial life.</p>
+        <h3 class="m-t-0 m-b-md">Thomas Smyth &<br>Daniel Petkevich</h3>
+        <p class="m-b-md">Thomas and Daniel went to Yale together. You'd think they'd have a handle on their personal finances, but after high interest payments, expensive car insurance, and bank overdraft fees, they realized that the world of consumer finance is surprisingly complicated. That's why they created Benjamin: to make it super-easy to take care of your financial life.</p>
       </div>
       <div class="col-md-4 col-sm-pull-5">
 <!--         <img src="docs/assets/img/thomas.jpg">
